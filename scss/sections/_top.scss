@@ -1,0 +1,278 @@
+.top{
+    &__inner{
+        min-height: 1048px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 669px;
+    }
+    &__content-title{
+        text-transform: uppercase;
+        font-size: 96px;
+        font-weight: 500;
+        line-height: 96px;  
+        margin-bottom: 24px;
+    }
+    &__content-title span{
+        color: #478BF9;
+    }
+
+    &__content-subtitle{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 48px;
+    }
+    &__content-btn{
+        border: 0;
+        display: flex;
+        padding: 20px 72px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 48px;
+        background: #478BF9;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px; 
+        color: #FFFFFF;
+        cursor: pointer;
+        &:active{
+            transform: translate(2px, 2px);
+        }
+    }
+
+}
+
+.baner-bg-desc{
+    width: 334px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &>marquee{
+        height: 1110px;
+        width: 100px;
+        &>ul{
+            height: 60px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+// .baner-bg-mobil[hidden]{
+//     width: 100%;
+//     margin-bottom: 33px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px 0;
+// }
+// .baner-bg-mobil>img{
+//     margin-right: 10px;
+// }
+
+
+
+.blog{
+    width: 531px;
+    &__title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+}
+
+.swiper {
+    width: 531px;
+    height: 595px;
+    border-radius: 100px;
+    border: 3px solid  #478BF9;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 24px 40px 0 24px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 64px;
+    border-radius: 196px;
+    background: #1E1231;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    &:hover{
+        background-color: #478BF9;
+    }
+    &>a{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+    }
+    &>span{
+        font-family: 'Futura PT', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.60);
+        font-feature-settings: 'liga' off;
+    }
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-scrollbar{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    margin-right: 16px;
+    margin-top: 96px;
+}
+.swiper-scrollbar-drag{
+    background-color: #478BF9;
+}
+
+.swiper-scrollbar
+.swiper-scrollbar-vertical, 
+.swiper-vertical>.swiper-scrollbar{
+    transform: translate3d(0px, 0px, 0px);
+    width: 8px; 
+    height: 403px; 
+    border-radius: 4px; 
+    transition-duration: 50ms;
+}
+
+
+
+
+.circle-bac-decor{
+    width: 574px;
+    height: 574px;
+    border-radius: 574px;
+    opacity: 0.7;
+    background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+    position: absolute;
+    filter: blur(325px);
+    right: -200px;
+    bottom: -200px;
+}
+
+
+
+@media (max-width: 425px){
+    .top{
+        &__inner{
+            height: auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 70px;
+            padding-bottom: 199px;
+        }
+        &__content{
+            margin-bottom: 32px;
+        }
+
+        &__content-title{
+            font-size: 46px;
+            text-align: center;
+            line-height: 50px;
+            margin-bottom: 12px;
+        }
+        &__content-subtitle{
+            font-size: 20px;
+            line-height: 26px;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &__content-btn{
+            width: 300px;
+            padding: 15px 20px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+    }
+
+    .baner-bg-desc{
+        display: none;
+    }
+    .baner-bg-mobil{
+        display: block;
+    }
+    .blog{
+        width: 100%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 421px;
+        border-radius: 50px;
+        border: 3px solid  #478BF9;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+        padding: 10px 16px 0 10px;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px 35px;
+        border-radius: 40px;
+        background: #1E1231;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        &>a{
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 6px;
+        }
+        &>span{
+            font-family: 'Futura PT', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.60);
+            font-feature-settings: 'liga' off;
+        }
+    }
+
+    .swiper-scrollbar{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.12);
+        margin-right: 0px;
+        margin-top: 60px;
+        position: relative;
+        height: 301px
+    }
+    .swiper-scrollbar
+    .swiper-scrollbar-vertical, 
+    .swiper-vertical>.swiper-scrollbar{
+        width: 4px; 
+        height: 301px; 
+    }
+
+}
